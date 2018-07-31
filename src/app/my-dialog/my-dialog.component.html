@@ -1,0 +1,16 @@
+<div style="text-align: center">
+  <h2 md-dialog-title>This is my dialog box</h2>
+  <mat-dialog-content>
+    upload your file
+    <br>
+    <br>
+    <strong>{{data}}</strong>
+    <input type="file" placeholder="input your file">
+  </mat-dialog-content>
+  <hr>
+
+<mat-dialog-actions>
+  <button mat-raised-button (click)="onCloseConfirm()" >Confirm</button>
+  <button mat-raised-button (click)="onCloseCancle()" >Cancle</button>
+</mat-dialog-actions>
+</div>
